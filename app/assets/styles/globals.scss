@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 @import './react-select.scss';
 @import 'react-redux-toastr/src/styles/index';
 
@@ -9,7 +11,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Outfit', sans-serif !important;
+	font-family: 'Outfit', sans-serif;
 
 	@apply bg-gray-900;
 }
@@ -29,7 +31,7 @@ a {
 
 input[type='file'],
 input[type='file']::-webkit-file-upload-button {
-	@apply cursor-pointer focus: outline-none;
+	@apply cursor-pointer focus:outline-none;
 }
 
 input:focus {
@@ -45,17 +47,14 @@ input:focus {
 	opacity: 0;
 	transform: scale(0.9);
 }
-
 .slide-animation-enter-active {
 	opacity: 1;
 	transform: translateX(0);
 	transition: opacity 300ms, transform 300ms;
 }
-
 .slide-animation-exit {
 	opacity: 1;
 }
-
 .slide-animation-exit-active {
 	opacity: 0;
 	transform: scale(0.9);

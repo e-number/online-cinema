@@ -63,14 +63,13 @@
 
 	&__option {
 		cursor: pointer !important;
-
 		&--is-focused {
 			background-color: lighten(#292a2e, 8%) !important;
 		}
 	}
 
 	&-container {
-		>div {
+		> div {
 			outline: none !important;
 			box-shadow: none !important;
 		}
