@@ -1,13 +1,12 @@
-/** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
-
+const { join } = require('path');
 const primary = '#E30B13'
 
 module.exports = {
 	content: [
-		'./pages/**/*.{js,ts,jsx,tsx}',
-		'./app/components/**/*.{js,ts,jsx,tsx}',
+		join(__dirname, './pages/**/*.{js,ts,jsx,tsx}'),
+		join(__dirname, './app/components/**/*.{js,ts,jsx,tsx}'),
 	],
 	theme: {
 		colors: {
