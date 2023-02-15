@@ -1,12 +1,12 @@
-// import axios, { axiosClassic } from 'api/interceptors'
+import axios, { axiosClassic } from 'api/interceptors'
 
 // import { IGenreEditInput } from '@/screens/admin/genre/genre-edit.interface'
 
 // import { ICollection } from '@/components/screens/collections/collections.types'
 
-// import { IGenre } from '@/shared/types/movie.types'
+import { IGenre } from '@/shared/types/movie.types'
 
-// import { getGenresUrl } from '@/configs/api.config'
+import { getGenresUrl } from '@/configs/api.config'
 
 export const GenreService = {
 	// async getBySlug(slug: string) {
@@ -43,11 +43,11 @@ export const GenreService = {
 	// 	return axios.get<IGenreEditInput>(getGenresUrl(`/${_id}`))
 	// },
 
-	// async getPopularGenres(limit: number = 4) {
-	// 	return axiosClassic.get<IGenre[]>(getGenresUrl(`/popular`), {
-	// 		params: {
-	// 			limit,
-	// 		},
-	// 	})
-	// },
+	async getPopularGenres(limit: number = 4) {
+		return axiosClassic.get<IGenre[]>(getGenresUrl(`/popular`), {
+			params: {
+				limit,
+			},
+		})
+	},
 }

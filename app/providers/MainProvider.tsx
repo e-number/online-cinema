@@ -22,7 +22,7 @@ const queryClient = new QueryClient({
 const MainProvider: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<QueryClientProvider client={queryClient}>
-			{children}
+			<Layout>{children}</Layout>
 		</QueryClientProvider>
 
 		// <HeadProvider>
