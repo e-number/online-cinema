@@ -7,7 +7,7 @@ import '../app/assets/styles/globals.scss'
 
 type TypeAppProps = AppProps & TypeComponentAuthFields
 
-const MyApp = ({ Component, pageProps }: TypeAppProps) => {
+const MyApp = ({ Component, pageProps, children }: TypeAppProps) => {
   return (
     <MainProvider >
       <Component {...pageProps} />

@@ -1,4 +1,4 @@
-// import AuthProvider from './AuthProvider/AuthProvider'
+import AuthProvider from './AuthProvider/AuthProvider'
 import HeadProvider from './HeadProvider/HeadProvider'
 import { FC, PropsWithChildren } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'

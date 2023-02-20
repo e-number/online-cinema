@@ -2,7 +2,7 @@ import { useQuery } from 'react-query'
 
 import { GenreService } from '@/services/genre/genre.service'
 
-// import { toastError } from '@/utils/api/withToastrErrorRedux'
+import { toastError } from '@/utils/api/withToastrErrorRedux'
 
 import { getGenreUrl } from '@/configs/url.config'
 
@@ -24,7 +24,7 @@ export const usePopularGenres = () => {
 					)
 					.splice(0, 4),
 			onError(error) {
-				// toastError(error, 'Popular genres menu')
+				toastError(error, 'Popular genres menu')
 			},
 		}
 	)
