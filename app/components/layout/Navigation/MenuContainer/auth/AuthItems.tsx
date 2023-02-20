@@ -1,19 +1,19 @@
 import { FC } from 'react'
 
-// import { useAuth } from '@/hooks/useAuth'
+import { useAuth } from '@/hooks/useAuth'
 
-// import { getAdminHomeUrl } from '@/configs/url.config'
+import { getAdminHomeUrl } from '@/configs/url.config'
 
 import MenuItem from '../MenuItem'
 
 import LogoutButton from './LogoutButton'
 
 const AuthItems: FC = () => {
-	// const { user } = useAuth()
+	const { user } = useAuth()
 
 	return (
 		<>
-			{/* {user ? (
+			{user ? (
 				<>
 					<MenuItem
 						item={{
@@ -36,7 +36,7 @@ const AuthItems: FC = () => {
 						title: 'Admin panel',
 					}}
 				/>
-			)} */}
+			)}
 		</>
 	)
 }
