@@ -15,7 +15,7 @@ export const usePopularGenres = () => {
 		{
 			select: ({ data }) =>
 				data
-					.map(
+					.filter(genre => genre.icon).map(
 						(genre): IMenuItem => ({
 							icon: genre.icon,
 							link: getGenreUrl(genre.slug),
