@@ -22,7 +22,7 @@ const ContentList: FC<IContentList> = ({ name, links }) => {
 				{links.slice(0, 3).map(({ link, title, _id }, idx) => (
 					<Fragment key={_id}>
 						<Link href={link}>
-							<a>{title}</a>
+							{title}
 						</Link>
 						{idx + 1 !== links.length ? ', ' : ''}
 					</Fragment>

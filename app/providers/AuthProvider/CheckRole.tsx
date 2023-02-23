@@ -5,7 +5,7 @@ import { useAuth } from '@/hooks/useAuth'
 
 import { TypeComponentAuthFields } from '@/shared/types/auth.types'
 
-const CheckRole: FC<TypeComponentAuthFields> = ({
+const CheckRole: React.FC<React.PropsWithChildren<TypeComponentAuthFields>> = ({
 	children,
 	Component: { isOnlyAdmin, isOnlyUser },
 }) => {

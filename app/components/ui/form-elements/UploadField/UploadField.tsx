@@ -1,6 +1,6 @@
 import { useUpload } from './useUpload'
 import cn from 'classnames'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import { FC } from 'react'
 
 import SkeletonLoader from '../../skeleton-loader/SkeletonLoader'

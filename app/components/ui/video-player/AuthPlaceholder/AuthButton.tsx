@@ -6,8 +6,8 @@ import styles from './AuthPlaceholder.module.scss'
 
 const AuthButton: FC<{ slug: string }> = ({ slug }) => {
 	return (
-		<Link href={`/auth?redirect=${getMovieUrl(slug)}`}>
-			<a className={styles.btn}>Sign in</a>
+		<Link href={`/auth?redirect=${getMovieUrl(slug)}`} className={styles.btn}>
+			Sign in
 		</Link>
 	)
 }

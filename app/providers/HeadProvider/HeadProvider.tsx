@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import NextProgressBar from 'nextjs-progressbar'
-import { FC, PropsWithChildren } from 'react'
+import { FC } from 'react'
 
 import { accentColor } from '@/configs/constants'
 
 import Favicons from './Favicons'
 
-const HeadProvider: FC<PropsWithChildren> = ({ children }) => {
+
+const HeadProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
 	return (
 		<>
 			<NextProgressBar

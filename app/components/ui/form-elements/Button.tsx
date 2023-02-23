@@ -4,7 +4,7 @@ import { FC } from 'react'
 import { IButton } from './form.interface'
 import styles from './form.module.scss'
 
-const Button: FC<IButton> = ({ children, className, ...rest }) => {
+const Button: React.FC<React.PropsWithChildren<IButton>> = ({ children, className, ...rest }) => {
 	return (
 		<button className={cn(styles.button, className)} {...rest}>
 			{children}

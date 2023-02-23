@@ -1,9 +1,9 @@
 import { FC } from 'react'
 
-// import Gallery from '@/ui/gallery/Gallery'
+import Gallery from '@/ui/gallery/Gallery'
 import Heading from '@/ui/heading/Heading'
 import SubHeading from '@/ui/heading/SubHeading'
-// import Slider from '@/ui/slider/Slider'
+import Slider from '@/ui/slider/Slider'
 
 import { Meta } from '@/utils/meta'
 
@@ -20,16 +20,16 @@ const Home: FC<IHome> = ({ slides, trendingMovies, actors }) => {
                 className="text-gray-500 mb-8 text-xl"
             />
 
-            {/* {slides.length && <Slider slides={slides} />} */}
+            {slides.length && <Slider slides={slides} />}
 
             <div className="my-10">
                 <SubHeading title="Trending now" />
-                {/* {trendingMovies.length && <Gallery items={trendingMovies} />} */}
+                {trendingMovies.length && <Gallery items={trendingMovies} />}
             </div>
 
             <div>
                 <SubHeading title="Best actors" />
-                {/* {actors.length && <Gallery items={actors} />} */}
+                {actors.length && <Gallery items={actors} />}
             </div>
         </Meta>
     )

@@ -1,5 +1,5 @@
 import { ICollection } from './collections.types'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import { FC } from 'react'
 
 const CollectionImage: FC<{ collection: ICollection }> = ({

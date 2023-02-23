@@ -19,7 +19,7 @@ const queryClient = new QueryClient({
 	},
 })
 
-const MainProvider: FC<TypeComponentAuthFields> = ({ children, Component }) => {
+const MainProvider: React.FC<React.PropsWithChildren<TypeComponentAuthFields>> = ({ children, Component }) => {
 	return (
 		<HeadProvider>
 			<Provider store={store}>

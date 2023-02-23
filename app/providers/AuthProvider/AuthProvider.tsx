@@ -10,7 +10,7 @@ import { TypeComponentAuthFields } from '@/shared/types/auth.types'
 
 const DynamicCheckRole = dynamic(() => import('./CheckRole'), { ssr: false })
 
-const AuthProvider: FC<TypeComponentAuthFields> = ({
+const AuthProvider: React.FC<React.PropsWithChildren<TypeComponentAuthFields>> = ({
 	children,
 	Component: { isOnlyAdmin, isOnlyUser },
 }) => {

@@ -9,7 +9,7 @@ import { MetaNoIndex } from '.'
 
 import logoImage from '@/assets/images/logo.svg'
 
-export const Meta: FC<ISeo> = ({
+export const Meta: React.FC<React.PropsWithChildren<ISeo>> = ({
 	title,
 	description,
 	image = null,
